@@ -1,0 +1,22 @@
+<?php
+/** @var \Magento\Framework\View\Element\Template $block */
+?>
+
+<div id="bootcamp" data-bind="scope: 'bootcampuicomponent'">
+    <!-- ko template: getTemplate() --> <!-- /ko -->
+</div>
+
+<script type="text/x-magento-init">
+{
+    "#bootcamp": {
+        "Magento_Ui/js/core/app": {
+            "components": {
+                "bootcampuicomponent": {
+                    "component": "Omnipro_UiComponent/js/component",
+                    "template": "Omnipro_UiComponent/component"
+                }
+            }
+        }
+    }
+}
+</script>
